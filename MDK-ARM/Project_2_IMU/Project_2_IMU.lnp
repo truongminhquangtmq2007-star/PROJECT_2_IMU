@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"project_2_imu\startup_stm32f103xb.o"
+"project_2_imu\main.o"
+"project_2_imu\stm32f1xx_it.o"
+"project_2_imu\stm32f1xx_hal_msp.o"
+"project_2_imu\stm32f1xx_hal_gpio_ex.o"
+"project_2_imu\stm32f1xx_hal_tim.o"
+"project_2_imu\stm32f1xx_hal_tim_ex.o"
+"project_2_imu\stm32f1xx_hal_uart.o"
+"project_2_imu\stm32f1xx_hal.o"
+"project_2_imu\stm32f1xx_hal_rcc.o"
+"project_2_imu\stm32f1xx_hal_rcc_ex.o"
+"project_2_imu\stm32f1xx_hal_gpio.o"
+"project_2_imu\stm32f1xx_hal_dma.o"
+"project_2_imu\stm32f1xx_hal_cortex.o"
+"project_2_imu\stm32f1xx_hal_pwr.o"
+"project_2_imu\stm32f1xx_hal_flash.o"
+"project_2_imu\stm32f1xx_hal_flash_ex.o"
+"project_2_imu\stm32f1xx_hal_exti.o"
+"project_2_imu\system_stm32f1xx.o"
+"project_2_imu\button.o"
+"project_2_imu\imu.o"
+--strict --scatter "Project_2_IMU\Project_2_IMU.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Project_2_IMU.map" -o Project_2_IMU\Project_2_IMU.axf
